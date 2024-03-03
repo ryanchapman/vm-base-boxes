@@ -1,31 +1,24 @@
-# arm-base-boxes
-Vagrant Base Boxes for ARM Hosts (e.g., Apple Silicon / M1)
+# vm-base-boxes
+Vagrant Base Boxes for amd64 (x86_64) Hosts
 
-This repository provides the Packer files for building Vagrant base boxes for ARM hosts.
+This repository provides the Packer files for building Vagrant base boxes for AMD64 (x86_64) hosts.
 
-The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/bytesguy)
+The pre-built boxes can be found on [Vagrant Cloud](https://app.vagrantup.com/ryanchapman)
 
 🚨 These should not be used for production workloads - use them at your own risk! 🚨
+
+These are based on the work of [Adam Hartley](https://github.com/BytesGuy/arm-base-boxes).  He did 99% of the work; I just adapted the scripts to build for Intel instead of ARM.
 
 ## Currently Supported Boxes
 
 | Distro | Version | Provider | Source | Box |
 | ------ | ------- | -------- | ------ | --- |
-| Ubuntu Server | 20.04.3 (Focal Fossa) | VMWare Fusion | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
-| Ubuntu Server | 20.04.3 (Focal Fossa) | Parallels | [Source](ubuntu-server-20.04/) | [bytesguy/ubuntu-server-20.04-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-20.04-arm64) |
-| Ubuntu Server | 21.10 (Impish Indri) | VMWare Fusion | [Source](ubuntu-server-21.10/) | [bytesguy/ubuntu-server-21.10-arm64](https://app.vagrantup.com/bytesguy/boxes/ubuntu-server-21.10-arm64) |
-| Debian | 11.2 (Bullseye) | VMWare Fusion | [Source](debian-11/) | [bytesguy/debian-11-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-11-arm64) |
-| Debian | 11.3 (Bullseye) | Parallels | [Source](debian-11/) | [bytesguy/debian-11-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-11-arm64) |
-| Debian | 10.11 (Buster) | VMWare Fusion | [Source](debian-10/) | [bytesguy/debian-10-arm64](https://app.vagrantup.com/bytesguy/boxes/debian-10-arm64) |
+| Ubuntu Server | 22.04.4 (Jammy Jellyfish) | VMWare Fusion | [Source](ubuntu-server-22.04/) | [ryanchapman/ubuntu-server-22.04](https://app.vagrantup.com/ryanchapman/boxes/ubuntu-server-22.04) |
 
 ## In-Progress / Planned
 
 | Distro | Version | Provider | Source |
 | ------ | ------- | -------- | ------ |
-| Ubuntu Server | 22.04 | VMWare Fusion | [Source](ubuntu-server-22.04/) |
-| Centos | 9 Stream | VMWare Fusion | [Source](centos-9/) |
-| Fedora | 35 | VMWare Fusion | [Source](fedora-35/) |
-| FreeBSD | 14 | VMWare Fusion | [Source](freebsd-14/) |
 
 ## Usage Instructions
 
