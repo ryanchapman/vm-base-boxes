@@ -8,4 +8,4 @@ cp metadata.json output/metadata.json
 cd output
 tar cvzf vmware-jammy.box ./*
 md5 vmware-jammy.box
-rm -f *.v* *.nvram metadata.json
+rm -f *.v* *.nvram 
