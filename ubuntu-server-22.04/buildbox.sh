@@ -6,6 +6,6 @@ packer build -force vmware-jammy.pkr.hcl
 
 cp metadata.json output/metadata.json
 cd output
-tar cvzf vmware-jammy-arm64.box ./*
-md5 vmware-jammy-arm64.box
+tar cvzf vmware-jammy.box ./*
+md5 vmware-jammy.box
 rm -f *.v* *.nvram metadata.json

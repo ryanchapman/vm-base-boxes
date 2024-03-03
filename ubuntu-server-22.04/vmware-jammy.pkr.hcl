@@ -8,13 +8,13 @@ packer {
 }
 
 source "vmware-iso" "ubuntu-jammy" {
-  iso_url = "https://cdimage.ubuntu.com/releases/22.04/release/ubuntu-22.04-live-server-arm64.iso"
-  iso_checksum = "md5:4dcafe2e69d6d0a8979cb4eb7c26c3fd"
+  iso_url = "https://releases.ubuntu.com/jammy/ubuntu-22.04.4-live-server-amd64.iso"
+  iso_checksum = "sha256:45f873de9f8cb637345d6e66a583762730bbea30277ef7b32c9c3bd6700a32b2"
   ssh_username = "vagrant"
   ssh_password = "vagrant"
   ssh_timeout = "30m"
   shutdown_command = "sudo shutdown -h now"
-  guest_os_type = "arm-ubuntu-64"
+  guest_os_type = "ubuntu-64"
   disk_adapter_type = "nvme"
   version = 19
   http_directory = "http"
